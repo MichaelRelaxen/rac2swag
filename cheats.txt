@@ -4,27 +4,27 @@ Mastercode
 	9011CD48 0C0472FA
 
 Save pos
-	E002000B 00138320 #r2+l2+r1
+	E002000B 00138320 	#r2+l2+r1
 	50189EA0 0000001E
 	0018CEC0 00000000
 
 
 Load pos
-	E0040007 00138320 #r2+l2+l1
+	E0040007 00138320	 #r2+l2+l1
 	5018CEC0 0000001E
 	00189EA0 00000000
-	20189FD4 00000000 #reset y velocity
-	20189F18 00000000 #reset h velocity?
-	0018C0B4 00000000 #reset state i think
+	20189FD4 00000000 	#reset y velocity
+	20189F18 00000000 	#reset h velocity?
+	0018C0B4 00000000 	#reset state i think
 
 
 Instakill
-	D0138320 02000045 #l1+l2+square
-	20189EA8 C2480000 #teleport to -50 z
-	0018C0B4 00000000 #reset state
+	D0138320 02000045	#l1+l2+square
+	20189EA8 C2480000 	#teleport to -50 z
+	0018C0B4 00000000 	#reset state
 	
 Unlock All Planets
-#this is a mess
+	#this is a mess
 	20139948 00000001
 	2013994C 00000002
 	20139950 00000003
@@ -52,21 +52,21 @@ Unlock All Planets
 	201399A8 0000001A
 
 Force-reload + Disable autosave
-	E0050603 00138320 #l2+r2+l3+r3
-	501507E0 00000001 #copy planet (read only) to current planet (this is retarded)
+	E0050603 00138320 	#l2+r2+l3+r3
+	501507E0 00000001 	#copy planet (read only) to current planet (this is retarded)
 	001A79F0 00000000 
-	001A8ED4 00000001 #reload all
-	001A8F14 00000001 #oozla reload
-	101393F8 0000FFFF #sets save descriptor to -1/disables autosave
+	001A8ED4 00000001 	#reload all
+	001A8F14 00000001 	#oozla reload
+	101393F8 0000FFFF 	#sets save descriptor to -1/disables autosave
 
 Reset Plat Bolts On Reload
-	E0020603 00138320 #l2+r2+l3+r3
-	4019B278 001B0001 #set all plat bolts to 0
+	E0020603 00138320 	#l2+r2+l3+r3
+	4019B278 001B0001 	#set all plat bolts to 0
 	00000000 00000000
 
 Disable Autosave
-	E0010900 00138320 #start+select
-	101393F8 0000FFFF #sets save descriptor to -1/disables autosave
+	E0010900 00138320 	#start+select
+	101393F8 0000FFFF 	#sets save descriptor to -1/disables autosave
 	
 Infinite Nanotech
 	2018C2EC 00000050
@@ -162,9 +162,9 @@ Infinite Ammo
 	00139734 00000004
 	
 Unlock/Remove Gadgets
-#l1+l2+dpad to unlock
-#l1+l2+r1+dpad to remove
-#this should be reworked
+	#l1+l2+dpad to unlock
+	#l1+l2+r1+dpad to remove
+	#this should be reworked
 	#Unlock Clank
 	E0038005 00138320
 	001A7AFA 00000001
@@ -219,17 +219,17 @@ Unlock/Remove Gadgets
 	001A7B0C 00000000
  
 Reset Specials Menu
-	D013D170 01000000 #check if menu is not open
-	01FF3FC8 00000000 #reset specials menu position to default
+	D013D170 01000000 	#check if menu is not open
+	01FF3FC8 00000000 	#reset specials menu position to default
 
 Default Checkpoints
 	#Oozla
-	D01A79F0 04010001 #check planet id
-	2021E4C0 43908C87 #x
-	2021E4C4 43CA9B13 #y
-	2021E4C8 42E60000 #z
-	2021E4D8 3F3E65C2 #rot
-	#coords are different for every planet
+	D01A79F0 04010001	 #check planet id
+	2021E4C0 43908C87 	#x
+	2021E4C4 43CA9B13 	#y
+	2021E4C8 42E60000 	#z
+	2021E4D8 3F3E65C2 	#rot
+				#coords are different for every planet
 
 	#Maktar
 	D01A79F0 04010002
