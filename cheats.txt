@@ -1,4 +1,3 @@
-#title
 "R&C: Going Commando Practice Codes"
  
 Mastercode
