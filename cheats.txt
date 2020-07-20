@@ -223,8 +223,8 @@ Unlock/Remove Gadgets
 	001A7B0C 00000000
  
 Reset Specials Menu
-	D013D170 01000000 	#check if menu is not open
-	01FF3FC8 00000000 	#reset specials menu position to default
+	D013D170 01000000
+	01FF3FC8 00000000
 
 Default Checkpoints
 	#Oozla
