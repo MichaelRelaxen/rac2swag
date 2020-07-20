@@ -23,6 +23,10 @@ Instakill
 	20189EA8 C2480000 	#teleport to -50 z
 	0018C0B4 00000000 	#reset state
 	
+Reset cutscenes on instakill
+	D0138320 01000045
+	0013963B 00000000	#snivelak boss
+	
 Unlock All Planets
 	#this is a mess
 	20139948 00000001
