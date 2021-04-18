@@ -4,6 +4,7 @@ Mastercode
 9011CD48 0C0472FA
 
 Fast loads
+D0138320 00000603
 20152C68 00000002
 
 Save pos
